@@ -11,6 +11,10 @@ def home_page():
 def question_with_one_answer():
     return render_template('question.html')
 
+@app.route('/the-question')
+def handle_question():
+    request.form(['question'])
+    return render_template('question.html')
 
 if __name__ == '__main__':
     app.run(
