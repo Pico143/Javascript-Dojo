@@ -13,8 +13,7 @@ def question_with_one_answer():
 
 @app.route('/the-question')
 def handle_question():
-    request.form(['question'])
-    return render_template('question.html')
+    return render_template('handle_question.html')
 
 if __name__ == '__main__':
     app.run(

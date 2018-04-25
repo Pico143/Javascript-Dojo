@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Question and answer</title>
+    <script src="static/main.js"></script>
 </head>
 <body>
 <form action="/the-question">
     <label for="question">Give me a question</label>
     <textarea name="question" id="question" required></textarea>
-    <select>
+    <select id="selection" name="selection">
         <option selected="selected">Yes</option>
         <option>No</option>
     </select>
-    <input type="submit">
+    <input type="submit" onclick="function_set.save_to_storage()">
 </form>
 </body>
 </html>
